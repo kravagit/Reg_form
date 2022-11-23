@@ -1,15 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration form</title>
-    <link rel="stylesheet" href="/styles/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration form</title>
+  <link rel="stylesheet" href="/styles/style.css">
 </head>
+
 <body>
-  
+  <div class="container">
+    <form action="#" method="post">
+      <div class="userDetails">
+        <div class="inputBox">
+          <span class="details">Full name</span>
+          <input type="text" placeholder="Enter your name" required>
+        </div>
+
+        <div class="inputBox">
+          <span class="details">Email</span>
+          <input type="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="inputBox">
+          <span class="details">Password</span>
+          <input type="password" placeholder="Enter your password" required>
+        </div>
+
+        <div class="inputBox">
+          <span class="details">Confirm password</span>
+          <input type="pass" placeholder="Confirm your password" required>
+        </div>
+
+        <div class="inputBox">
+          <span class="details">Gender</span>
+          <div class="genderBox">
+            <label for="male">
+              <input class="gender" type="radio" value="male" name="gender" id="male">Male
+            </label>
+            <label for="female">
+              <input class="gender" type="radio" value="female" name="gender" id="female">Female
+            </label>
+          </div>
+        </div>
+
+        <div class="inputBox">
+          <span class="details">Age</span>
+          <input type="number" class="inputNumber" placeholder="Enter your age" required>
+        </div>
+
+        <div class="inputBox">
+          <span class="details">Course</span>
+          <select name="" id="">
+            <option value="Front-End">Front-End</option>
+            <option value="Back-End">Back-End</option>
+            <option value="Project Management">Project Management</option>
+            <option value="QA Manual">QA Manual</option>
+          </select>
+        </div>
+
+        <div class="inputBox">
+          <span class="details">Full adress</span>
+          <textarea name="" id="" cols="30" rows="10" placeholder="Country,region,city/village,street"></textarea>
+        </div>
+
+        <div class="inputBox" >
+          <input type="checkbox" class="checkbox" id="agree">
+          <label for="agree" class="done">
+            <span class="check"></span>
+            <span class="details">I agree to the processing of personal data</span>
+          </label>
+          
+        </div>
+
+        <div class="buttons">
+          <button type="reset">Clear form</button>
+
+          <button type="submit">Registration</button>
+        </div>
+       
+
+
+      </div>
+    </form>
+  </div>
 </body>
+
 </html>
-
-

@@ -1,5 +1,113 @@
+@font-face {
+  font-family: "Poppins-Italic";
+  src: url(../fonts/Poppins-Italic.ttf);
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Poppins-Italic";
+  font-size: 16px;
+}
+
+.container {
+  padding: 20px;
+  border: 3px solid black;
+  max-width: 600px;
+  width: 100%;
+  padding: 25px 30px;
+  border-radius: 5px;
+  background-color: rgb(236, 220, 220);
+}
+
+.inputBox {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0px;
+}
+
+input {
+  padding: 10px 15px;
+  width: 300px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 25px;
+}
+
+button {
+  padding: 10px 25px;
+  font-size: 1.5rem;
+}
+
+input::-moz-placeholder {
+  font-family: "Poppins-Italic";
+  font-size: 1.2rem;
+  color: rgb(237, 176, 140);
+}
+
+input:-ms-input-placeholder {
+  font-family: "Poppins-Italic";
+  font-size: 1.2rem;
+  color: rgb(237, 176, 140);
+}
+
+input::placeholder {
+  font-family: "Poppins-Italic";
+  font-size: 1.2rem;
+  color: rgb(237, 176, 140);
+}
+
+textarea {
+  padding: 20px;
+  letter-spacing: 3px;
+}
+
+.gender {
+  width: 50px;
+}
+
+.genderBox {
+  padding: 0 50px;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  display: none;
+}
+
+.check {
+  width: 15px;
+  height: 15px;
+  background-color: rgb(14, 13, 13);
+  border: 1px solid black;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 50px;
+}
+
+#agree:checked ~ .done .check {
+  background-color: red;
+}
+
+.done {
+  display: flex;
+  align-items: center;
+}
+
+.inputNumber {
+  width: 150px;
 }/*# sourceMappingURL=style.css.map */
